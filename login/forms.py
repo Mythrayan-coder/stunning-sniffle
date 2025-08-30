@@ -1,5 +1,5 @@
 from django import forms
-from .models import chepak
+from .models import table
 
 #class ReviewForm(forms.Form):
 
@@ -19,7 +19,7 @@ class ReviewForm(forms.ModelForm):
     )
 
     class Meta:
-        model = chepak
+        model = table
         fields = '__all__'
         widgets = {
             'password': forms.PasswordInput(),

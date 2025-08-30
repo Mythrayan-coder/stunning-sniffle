@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #'reviews',
-    #'your_app'
-    'login',
+    #'your_app',
+    #'login',
+   'rest_framework',
+    #'viewset',
+    'student',
     
 ]
 

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tech Blog</title>
+  <!-- Load Inter font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header Section -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+      <a href="#" class="text-3xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+        The Tech Blog
+      </a>
+      <nav class="mt-4 md:mt-0 space-x-6">
+        <a href="#" class="text-lg font-medium text-gray-600 hover:text-blue-600 transition-colors">Articles</a>
+        <a href="#" class="text-lg font-medium text-gray-600 hover:text-blue-600 transition-colors">About</a>
+        <a href="#" class="text-lg font-medium text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-12">
+    <!-- Main Content Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <!-- Blog Posts Section -->
+      <div class="md:col-span-2">
+        <h2 class="text-2xl font-semibold mb-6">Latest Articles</h2>
+
+        <!-- Post Card 1 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8 transition-transform transform hover:scale-105">
+          <img class="w-full h-64 object-cover rounded-xl mb-4" src="https://placehold.co/1000x600/D1D5DB/4B5563?text=Article+Image" alt="Article Image">
+          <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">
+            A Deep Dive into the Latest JavaScript Frameworks
+          </h3>
+          <p class="text-gray-500 text-sm mb-4">
+            <span class="font-medium text-gray-600">By Jane Doe</span> on October 26, 2024
+          </p>
+          <p class="text-gray-600 text-base mb-6">
+            Exploring the pros and cons of Vue, Svelte, and React. Which one is right for your next project?
+          </p>
+          <a href="#" class="inline-block font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+            Read More &rarr;
+          </a>
+        </div>
+        
+        <!-- Post Card 2 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8 transition-transform transform hover:scale-105">
+          <img class="w-full h-64 object-cover rounded-xl mb-4" src="https://placehold.co/1000x600/D1D5DB/4B5563?text=AI+and+the+Future" alt="AI and the Future">
+          <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">
+            The Role of AI in Modern Web Development
+          </h3>
+          <p class="text-gray-500 text-sm mb-4">
+            <span class="font-medium text-gray-600">By John Smith</span> on October 25, 2024
+          </p>
+          <p class="text-gray-600 text-base mb-6">
+            From code generation to automated testing, AI is revolutionizing how we build websites.
+          </p>
+          <a href="#" class="inline-block font-semibold text-blue-600 hover:text-blue-800 transition-colors">
+            Read More &rarr;
+          </a>
+        </div>
+      </div>
+      
+      <!-- Sidebar -->
+      <aside class="space-y-8">
+        <!-- Recent Posts Widget -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <h3 class="text-lg font-semibold mb-4">Recent Posts</h3>
+          <ul class="space-y-4">
+            <li>
+              <a href="#" class="block text-gray-600 hover:text-blue-600 transition-colors">Building a Serverless Backend with Node.js</a>
+            </li>
+            <li>
+              <a href="#" class="block text-gray-600 hover:text-blue-600 transition-colors">Understanding CSS Grid and Flexbox</a>
+            </li>
+            <li>
+              <a href="#" class="block text-gray-600 hover:text-blue-600 transition-colors">Top 5 Tools for a Frontend Developer</a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Categories Widget -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <h3 class="text-lg font-semibold mb-4">Categories</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-1 rounded-full">
+              Programming
+            </span>
+            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-1 rounded-full">
+              Design
+            </span>
+            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-1 rounded-full">
+              DevOps
+            </span>
+            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-1 rounded-full">
+              Tutorials
+            </span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 The Tech Blog. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+    

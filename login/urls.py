@@ -8,6 +8,8 @@ urlpatterns = [
   path("login", views.chepak_login, name="chepak_login"),
   path("submitted", views.register),
   path("welcome", views.welcome),
+  path("final", views.final),
   path("", views.log),
+  
   
 ]

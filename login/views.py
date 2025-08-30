@@ -5,6 +5,8 @@ from .forms import ReviewForm,ChepakLoginForm
 from django.contrib import messages
 from django.shortcuts import render, redirect
 
+
+
 def log(request):
     return render(request,"log.html")
       # Use 'request' to match Django's convention
@@ -16,15 +18,15 @@ def chepak_login(request):
             email = form.cleaned_data["email"]
             password = form.cleaned_data["password"]
             try:
-                user = chepak.objects.get(Email_address=email, Password=password)
-            except chepak.DoesNotExist:
+                user = table.objects.get(Email_address=email, Password=password)
+            except table.DoesNotExist:
                 user = None
 
             if user:
                 # Save login state in session
-                request.session['chepak_user_id'] = user.id
+                request.session['table_user_id'] = user.id
                 messages.success(request, "Login successful.")
-                return redirect("welcome/")  # or any view name
+                return redirect("/final")  # or any view name
             else:
                 messages.error(request, "Incorrect email or password.")
     else:
@@ -48,3 +50,10 @@ def register(request):
 
 def welcome(request):
     return render(request, 'welcome.html')
+
+
+def final(request):
+    return render(request, 'final.html')
+
+
+
